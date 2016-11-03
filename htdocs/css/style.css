@@ -571,7 +571,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  * Menu layout for the desktop variant, usually full width of browser.
  */
 .rm-desktop ul {
-  background-color: #eee;
+  background-color: inherit;
 }
 .rm-desktop li {
   position: relative;
@@ -582,7 +582,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-desktop li a {
   color: inherit;
-  background-color: #eee;
+  background-color: inherit;
 }
 .rm-desktop li a:hover {
   color: inherit;
@@ -712,7 +712,12 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  *  Header
  */
 .site-header {
-  height: 80px;
+  height: 60px;
+  background-color: #565656;
+  color: white;
+}
+.rm-max .rm-mobile {
+  background-color: #565656;
 }
 .site-logo-text,
 .navbar2,
@@ -725,22 +730,84 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .site-logo-text a {
   text-decoration: none;
-  color: black;
+  color: #565656;
+}
+.site-logo-text-icon img {
+  width: 40px;
+  height: 40px;
+  padding-left: 25px;
+  padding-top: 5px;
 }
 /** --------------------------------------------------------------
  *  Logo images
  */
 .logo-1 {
-  position: absolute;
-  top: 70px;
-  left: -140px;
+  display: none;
 }
 .site-logo-text-icon img {
   vertical-align: bottom;
 }
+.breadcrumb-list ul {
+  padding: 0;
+}
+.breadcrumb-list ul li {
+  list-style-type: none;
+}
+.sidebar {
+  width: 25%;
+}
+.toc {
+  padding: 0;
+}
+.toc li {
+  list-style-type: none;
+}
+/*
+
+.article {
+    width: 75%;
+    float: right;
+}
+*/
+a {
+  text-decoration: none;
+  color: #76323F;
+}
+.next-previous {
+  width: 75%;
+  float: right;
+}
+/** --------------------------------------------------------------
+ *  Footer
+ */
+.footer {
+  border-top: 1px solid black;
+  margin-top: 10px;
+  background-color: #565656;
+  color: white;
+}
+.footer a {
+  color: #b2b2b2;
+  text-decoration: underline;
+}
+.footer a:hover {
+  text-decoration: none;
+}
+/** --------------------------------------------------------------
+ *  Byline
+ */
+.byline {
+  border: 1px solid #999;
+  width: 400px;
+  overflow: auto;
+  margin: 5px;
+}
 /** --------------------------------------------------------------
  *  Responsive design
  */
+.flash-wrap img {
+  max-width: 100%;
+}
 @media screen and (max-width: 900px) {
   .site-logo-text {
     width: 40%;
@@ -752,12 +819,12 @@ a.rm-button.rm-clicked .rm-button-face-2 {
     width: 10%;
   }
 }
-.flash-wrap img {
-  max-width: 100%;
-}
 @media screen and (max-width: 750px) {
   .sidebar {
     display: none;
+  }
+  .next-previous {
+    width: 100%;
   }
 }
 @media screen and (max-width: 700px) {
@@ -770,6 +837,20 @@ a.rm-button.rm-clicked .rm-button-face-2 {
     width: 90%;
   }
   .navbar2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 420px) {
+  .golfImage {
+    width: 100%;
+    height: 100%;
+  }
+  .byline {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .byline {
     display: none;
   }
 }
