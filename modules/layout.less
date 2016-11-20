@@ -1,0 +1,164 @@
+
+.inner-wrap {
+    .container();
+    max-width: 960px;
+}
+
+.row{
+    .row();
+}
+
+.flash,
+.header {
+    .column(12);
+}
+
+.main{
+    .column(12);
+
+    &.has-sidebar-left {
+        .column(8);
+        .push(1);
+    }
+
+    &.has-sidebar-right {
+        .column(9);
+        .push(0);
+    }
+    &.has-sidebar-left.has-sidebar-right {
+        .column(8);
+        .push(0);
+    }
+}
+
+.sidebar-left {
+    .column(2);
+}
+
+.sidebar-right {
+    .column(3);
+}
+
+body{
+    .font();
+    .typographyHeadings();
+    .typographyTextElements();
+    .typographyCodeElements();
+    .typographyListElements();
+    //.typographyTableElements();
+    .typographyOtherElements();
+
+}
+
+table {
+   margin-top: 0;
+   margin-bottom: @magicNumber;
+   border-spacing: 0;
+}
+
+th,
+td {
+   padding: 0 1em 0 0;
+   text-align: left;
+}
+
+.footer-column {
+    float: left;
+    .column(4);
+}
+
+
+.footer-column-wrapper {
+    overflow: auto;
+}
+
+.footer {
+    margin-bottom: 0px;
+}
+
+.toc{
+    .column(3);
+    float: left;
+}
+
+body.route-grid .inner-wrap{
+    .showGrid();
+}
+
+
+body.route-typography .inner-wrap{
+    background-image: url("grid/horisontal-grid-24.png");
+}
+/*
+body.route- .main{
+    .column(12);
+}
+*/
+
+body.route-about img{
+    max-width: 100%;
+}
+
+.outer-wrap-footer {
+    clear: both;
+    margin-bottom: 22px;
+}
+
+.site-footer {
+    text-align: center;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-type: none;
+    }
+
+    li {
+        display: inline;
+    }
+}
+
+.footer-column {
+    ul {
+        margin: 0;
+        padding: 1em;
+        list-style-type: circle;
+    }
+}
+
+.next-previous {
+    .next,
+    .previous {
+        .column(6);
+    }
+
+    .next {
+        float: right;
+        text-align: right;
+    }
+}
+
+.breadcrumb {
+    margin-bottom: 24px;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    li {
+        display: inline;
+
+        &::after {
+            content: " » ";
+        }
+    }
+}
+
+.site-header {
+    position: relative;
+}
+
+.article {
+    min-height: 30em;
+}

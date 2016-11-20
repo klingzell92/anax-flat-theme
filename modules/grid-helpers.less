@@ -1,0 +1,25 @@
+/**
+ * Show grid.
+ */
+.showGrid(@maxWidth: @gridSystemWidth) {
+    background: url("grid/grid940x12x60x20-nomargin.png") repeat-y fixed center center;
+    background-size: 100% auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: @maxWidth;
+
+    @media (min-width: @maxWidth) {
+        background-size: @maxWidth auto;
+    }
+}
+/*.showGridTypography(@maxWidth: @gridSystemWidth) {
+    background-image: url("grid/horisontal-grid-24.png");
+    background-size: 100% auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: @maxWidth;
+
+    @media (min-width: @maxWidth) {
+        background-size: @maxWidth auto;
+    }
+}*/
