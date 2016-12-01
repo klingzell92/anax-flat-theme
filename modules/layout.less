@@ -1,5 +1,5 @@
 
-.inner-wrap {
+.wrap-all {
     .container();
     max-width: 960px;
 }
@@ -81,6 +81,16 @@ td {
     float: left;
 }
 
+body.route- main{
+    .column(10);
+    .push(1);
+}
+
+body.route-theme main{
+    .column(10);
+    .push(1);
+}
+
 body.route-grid .inner-wrap{
     .showGrid();
 }
@@ -89,15 +99,15 @@ body.route-grid .inner-wrap{
 body.route-typography .inner-wrap{
     background-image: url("grid/horisontal-grid-24.png");
 }
-/*
-body.route- .main{
-    .column(12);
+
+body.route-analysis-colorscheme main img{
+    border: 1px solid black;
 }
-*/
 
 body.route-about img{
     max-width: 100%;
 }
+
 
 .outer-wrap-footer {
     clear: both;
@@ -161,4 +171,19 @@ body.route-about img{
 
 .article {
     min-height: 30em;
+}
+
+.colorPalette {
+    padding: 0;
+    list-style-type: none;
+    overflow: auto;
+}
+
+.colorPalette li{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    margin: 2px;
+     border-radius: 12px;
 }

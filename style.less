@@ -26,11 +26,14 @@
 }
 
 .site-logo-text,
-.navbar2,
 .profile{
-    float: left;
+    //float: left;
     //width: 36%;
-    .column(5);
+    .column(1);
+}
+
+.navbar2{
+    .column(10);
 }
 .site-logo-text{
     font-size: 2em;
@@ -49,12 +52,16 @@
 }
 // Navbar main
 .rm-desktop li {
-    //background-color: #eee;
+    //background-color: white;
 }
 // Navbar max
 .rm-max .rm-small .rm-button {
-    //font-size: 2em;
+    font-size: 2em;
+    margin-right: 20px;
+    margin-top: 0;
 }
+
+
 @maxButtonFontSize: 2em;
 
 /** --------------------------------------------------------------
@@ -96,7 +103,6 @@
     list-style-type: none;
 }
 /*
-
 .article {
     width: 75%;
     float: right;
@@ -136,9 +142,9 @@ a {
  */
 .byline {
     border: 1px solid #999;
-    width: 400px;
+    .column(10);
+    .push(1);
     overflow: auto;
-     margin: 5px;
 }
 
 /** --------------------------------------------------------------
@@ -147,21 +153,18 @@ a {
 .inner-wrap img {
   max-width: 100%;
 }
-
-@media screen and (max-width: 900px) {
-  .site-logo-text {
-    width: 40%;
-  }
-
-  .profile {
-    width: 10%;
-  }
-}
+/*
 @media screen and (max-width: 880px) {
     .navbar2 {
       display: none;
     }
+}*/
+@media screen and (max-width: 820px) {
+    .navbar2 {
+      display: none;
+    }
 }
+
 @media screen and (max-width: 750px) {
   .sidebar {
     display: none;
@@ -179,18 +182,13 @@ a {
   }
 }
 
-@media screen and (max-width: 600px) {
-    .navbar2 {
-      display: none;
-    }
-}
-
+/*
 @media screen and (max-width: 480px) {
   .site-logo-text {
     width: 90%;
   }
 
-}
+}*/
 @media screen and (max-width: 430px) {
   .golfImage {
     width: 100%;
