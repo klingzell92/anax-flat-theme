@@ -1,0 +1,72 @@
+@import url(light.less);
+
+
+body{
+    background: white;
+   background: -webkit-linear-gradient(left, white , gray);
+   background: -o-linear-gradient(right, white, gray);
+     background: -moz-linear-gradient(right, white, gray);
+   background: linear-gradient(to right, #d9d9d9, white , #d9d9d9);
+}
+
+.inner-wrap{
+    background-color: transparent;
+}
+
+body.route-grid .inner-wrap{
+    .showGrid(100%);
+}
+
+
+.site-header{
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
+}
+
+.footer{
+    border-top: 2px solid black;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
+}
+
+.wrap-all{
+    max-width: none;
+}
+
+.outer-wrap-footer{
+    margin-bottom: 0;
+}
+
+
+.sidebar-left{
+    .column(1);
+    .push(1);
+}
+
+.breadcrumb-wrap{
+    .column(10);
+    .push(1);
+}
+
+.blog{
+    position: relative;
+}
+
+.wrap{
+    position: relative;
+}
+
+.ribbon{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+h1{
+    position: relative;
+}
+h1::after {
+    content: url(../image/wreath2.png?w=50);
+    position: absolute;
+    top: .1em;
+    right: 6em;
+    display: block;
+}

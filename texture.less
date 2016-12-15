@@ -1,0 +1,76 @@
+@import url(light.less);
+
+
+body{
+    background-image: url("../img/DarkWall.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.route-grid .inner-wrap{
+    .showGrid(100%);
+}
+
+body.route-typography .main{
+    color: black;
+}
+
+.site-header{
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
+}
+
+.footer{
+    border-top: 2px solid black;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
+}
+
+.wrap-all{
+    max-width: none;
+}
+
+.outer-wrap-footer{
+    margin-bottom: 0;
+}
+
+.inner-wrap{
+    background-color: transparent;
+    color: white;
+}
+
+a{
+    color: white;
+}
+
+.sidebar-left{
+    .column(1);
+    .push(1);
+}
+
+.breadcrumb-wrap{
+    .column(10);
+    .push(1);
+}
+
+.breadcrumb-list ul {
+    border: 1px solid #fff;
+}
+
+.main.has-sidebar-left{
+    border-left: 1px solid white;
+}
+
+.report-right{
+    margin-left: 20px;
+}
+
+h1{
+    border-bottom: 2px solid white;
+}
+
+h2{
+    border-bottom: 1px solid white;
+}
+
+h3, h4{
+    text-decoration: underline;
+}
